@@ -1,0 +1,87 @@
+.main-footer
+   padding-top: 50px
+   padding-bottom: 50px
+   background-color: #242424
+   &-wrapper
+      display: flex
+      justify-content: space-between
+      
+
+   &-navigation
+
+      .navigation__list
+         display: flex
+         justify-content: space-between
+         flex-wrap: wrap
+         padding-top: 25px
+         padding-bottom: 25px
+         padding-left: 70px
+         width: 310px
+         font-size: 18px
+         font-weight: 500
+         line-height: 22px
+         text-transform: uppercase
+         border-left: 1px solid #BDBDBD
+         .navigation__link
+            box-sizing: border-box
+            margin-bottom: 10px
+            width: 50%
+            transition: all .2s
+            &:hover
+               padding-left: 20px
+   &__logo
+      filter: grayscale(100%)
+   &-feedback
+
+      .feedback__social
+         width: 190px
+         margin-left: auto
+         margin-bottom: 60px
+         b
+            display: block
+            margin-bottom: 20px
+            font-size: 18px
+            line-height: 20px
+            text-align: center
+            text-transform: uppercase
+         ul
+            display: flex
+            justify-content: space-between
+            margin: 0
+            padding: 0
+            .social__button
+               display: block
+               width: 50px
+               height: 50px
+            .social__button_fb
+               background: url(../img/fb.png) 0 0 no-repeat
+               &:hover
+                  background: url(../img/fb-hover.png) 0 0 no-repeat
+            .social__button_insta
+               background: url(../img/insta.png) 0 0 no-repeat
+               &:hover
+                  background: url(../img/insta-hover.png) 0 0 no-repeat
+            .social__button_youtube
+               background: url(../img/youtube.png) 0 0 no-repeat
+               &:hover
+                  background: url(../img/youtube-hover.png) 0 0 no-repeat
+      .feedback__email
+         display: flex
+         align-items: center
+         width: 320px
+         p
+            position: relative
+            margin: 0
+            margin-right: 8px
+            padding: 0
+            width: 260px
+            font-size: 18px
+            line-height: 25px
+            &::after
+               content: ''
+               position: absolute
+               bottom: 4px
+               right: 10px
+               width: 60px
+               height: 16px
+               background: url(../img/Arrow.svg) 0 0 no-repeat

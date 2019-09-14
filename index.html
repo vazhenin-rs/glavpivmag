@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>ГЛАВПИВМАГ</title>
-   <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/slick.css" />
    <link rel="stylesheet" href="css/slick-theme.css" />
@@ -15,110 +15,129 @@
    <header class="main-header">
       <div class="container">
          <nav class="main-navigation">
-            <a href="#" class="main-logo"><img src="img/Logo.svg" alt="Логотип ГЛАВПИВМАГ" width="109" height="110"></a>
+            <a href="#" class="main-navigation__logo"><img src="img/Logo.svg" alt="Логотип ГЛАВПИВМАГ" width="109" height="110"></a>
             <ul class="main-navigation__site">
-               <li>Главная</li>
-               <li>Каталог</li>
-               <li>Пиво</li>
-               <li>Бар</li>
-               <li>Доставка</li>
-               <li>Экскурсия</li>
-            </ul>
-            <ul class="main-navigation__contacts">
-               <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
-               <li>Москва, Якиманка, д.2</li>
-               <li><a href="#" class="link-cart">Корзина</a></li>
+               <li class="main-navigation__link main-navigation__link_current"><a href="">Главная</a></li>
+               <li class="main-navigation__link"><a href="">Каталог</a></li>
+               <li class="main-navigation__link"><a href="">Пиво</a></li>
+               <li class="main-navigation__link"><a href="">Бар</a></li>
+               <li class="main-navigation__link"><a href="">Доставка</a></li>
+               <li class="main-navigation__link"><a href="">Экскурсия</a></li>
             </ul>
          </nav>
+         <ul class="main-header__contacts">
+            <li class="contacts__phone"><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+            <li class="contacts__address">Москва, Якиманка, д.2</li>
+            <li class="contacts__cart"><a href="#" class="link-cart">Корзина</a></li>
+         </ul>
       </div>
    </header>
-   <main class="container">
+   <main>
       <section class="main-offer">
-         <h1>Лучший крафт в России</h1>
-         <a href="" class="button">Перейти в каталог</a>
-         <span>С бесплатной доставкой по Москве</span>
+         <div class="container">
+            <h1>Магазин крафтового пива</h1>
+            <a href="#" class="button main-offer__button">Перейти в каталог</a>
+            <span>С бесплатной доставкой по Москве</span>
+         </div>
       </section>
       <section class="catalog">
-         <h2>Каталог пива</h2>
-         <a href="#">Перейти в каталог</a>
-         <ul class="catalog-list">
-            <li class="catalog-list__item">
-               <div class="item-about">
-                  <h3 class="item-about__title">Jaws Atomic</h3>
-                  <span class="item-about__subtitles">Тёмный Индийский Эль</span>
-                  <span class="item-about__subtitles">Стиль пива</span>
-                  <p>
-                     Индийский Светлый Эль. 
-                     В аромате богатство красок американского хмеля 
-                     с оттенками тропических фруктов, цитрусов и хвои.
-                  </p>
-                  <ul class="item-about__specs">
-                     <li>Крепость<span>7.5%</span></li>
-                     <li>Объём<span>0.5 л</span></li>
-                  </ul>
-               </div>
-               <img src="img/Jaws_Atomic.png" alt="Изображение бутылки Jaws Atomic" class="catalog-list__image">
-               <span class="catalog-list__price">180 ₽</span>
-               <span class="catalog-list__quantity">1</span>
-               <button class="catalog-list__button">В корзину</button>
-            </li>
-            <li class="catalog-list__item">
-               <div class="item-about">
-                  <h3 class="item-about__title">Jaws Lager</h3>
-                  <span class="item-about__subtitles">Лагер в стиле «Джоус»</span>
-                  <span class="item-about__subtitles">Стиль пива</span>
-                  <p>
-                     Цвет светло-золотистый. 
-                     Аромат солодовый, с тонкими чуть цитрусовыми оттенками хмеля. 
-                     Вкус освежающий.
-                  </p>
-                  <ul class="item-about__specs">
-                     <li>Крепость<span>5%</span></li>
-                     <li>Объём<span>0.5 л</span></li>
-                  </ul>
-               </div>
-               <img src="img/Jaws_Lager.png" alt="Изображение бутылки Jaws Lager" class="catalog-list__image">
-               <span class="catalog-list__price">155 ₽</span>
-               <span class="catalog-list__quantity">1</span>
-               <button class="catalog-list__button">В корзину</button>
-            </li>
-         </ul>
+         <div class="container">
+            <div class="catalog-inner">
+               <h2 class="catalog__title">Каталог пива</h2>
+               <a href="#" class="catalog__link link-arrow">Перейти в каталог</a>
+            </div>
+            <ul class="catalog-list">
+               <li class="catalog-list__item">
+                  <img src="img/Jaws_Atomic.png" alt="Изображение бутылки Jaws Atomic" class="catalog-list__image">
+                  <div class="item-about">
+                     <h3 class="item-about__title">Jaws Atomic</h3>
+                     <ul class="item-about__specs">
+                        <li><b>Крепость</b><span>7.5%</span></li>
+                        <li><b>Объём</b><span>0.5 л</span></li>
+                        <li><b>Стиль</b><span>IPA</span></li>
+                        <li><b>Цена</b><span>180 ₽</span></li>
+                     </ul>
+                     <p>
+                        Индийский Светлый Эль. <br>
+                        В аромате богатство красок американского хмеля
+                        с оттенками тропических фруктов, цитрусов и хвои.
+                     </p>
+                     <div class="catalog-list-quantity">
+                        <button class="quantity__button quantity__button_minus">-</button>
+                        <span class="quantity__index">1</span>
+                        <button class="quantity__button quantity__button_plus">+</button>
+                        <button class="catalog-list-quantity__button">В корзину</button>
+                     </div>
+                     
+                  </div>
+                  
+               </li>
+               <li class="catalog-list__item">
+                  <img src="img/Jaws_Lager.png" alt="Изображение бутылки Jaws Lager" class="catalog-list__image">
+                  <div class="item-about">
+                     <h3 class="item-about__title">Jaws Lager</h3>
+                     <ul class="item-about__specs">
+                        <li><b>Крепость</b><span>5%</span></li>
+                        <li><b>Объём</b><span>0.5 л</span></li>
+                        <li><b>Стиль</b><span>Lager</span></li>
+                        <li><b>Цена</b><span>155 ₽</span></li>
+                     </ul>
+                     <p>
+                        Лагер в стиле «Джоус» 
+                        Цвет светло-золотистый. 
+                        Аромат солодовый, с тонкими чуть 
+                        цитрусовыми оттенками хмеля.
+                        Вкус освежающий.
+                     </p>
+                     <div class="catalog-list-quantity">
+                        <button class="quantity__button quantity__button_minus">-</button>
+                        <span class="quantity__index">1</span>
+                        <button class="quantity__button quantity__button_plus">+</button>
+                        <button class="catalog-list-quantity__button">В корзину</button>
+                     </div>
+                     
+                  </div>
+               </li>
+            </ul>
+         </div>
       </section>
       <section class="about-craft">
-         <h2>О крафте</h2>
-         <p>
-            Craft beer – алкогольный напиток частного производства,
-            который выпускается мелкосерийными партиями,
-            где основной удар делается на вкус, аромат и текстуру пива.
-         </p>
-         <p>
-            Крафтовые пивовары самые настоящие экспериментаторы,
-            которые стоят на страже современных технологий,
-            классических рецептов и пивных трендов.
-         </p>
+         <div class="container">
+            <h2 class="about-craft__title">О крафте</h2>
+            <p class="about-craft__text">
+               Craft beer – алкогольный напиток частного производства,
+               который выпускается мелкосерийными партиями,
+               где основной удар делается на вкус, аромат и текстуру пива.
+            </p>
+            <p class="about-craft__text">
+               Крафтовые пивовары самые настоящие экспериментаторы,
+               которые стоят на страже современных технологий,
+               классических рецептов и пивных трендов.
+            </p>
+         </div>
       </section>
       <section class="gallery">
          <div class="container">
-            <h2>Крафт лайф</h2>
-            <a href="#">Перейти в фотоальбом</a>
+            <div class="gallery-inner">
+               <h2 class="gallery__title">Крафт лайф</h2>
+               <a href="#" class="gallery__link link-arrow">Перейти в фотоальбом</a>
+            </div>
             <div class="slider">
-               <ul class="slider__list">
-                  <li class="slider__item">
-                     <img src="img/slider-img_1.jpg" alt="Фото из галереи">
-                  </li>
-                  <li class="slider__item">
-                     <img src="img/slider-img_2.jpg" alt="Фото из галереи">
-                  </li>
-                  <li class="slider__item">
-                     <img src="img/slider-img_3.jpg" alt="Фото из галереи">
-                  </li>
-                  <li class="slider__item">
-                     <img src="img/slider-img_4.jpg" alt="Фото из галереи">
-                  </li>
-                  <li class="slider__item">
-                     <img src="img/slider-img_5.jpg" alt="Фото из галереи">
-                  </li>
-               </ul>
+               <div class="slider__item">
+                  <img src="img/slider/slider-img_1.jpg" alt="Фото из галереи">
+               </div>
+               <div class="slider__item">
+                  <img src="img/slider/slider-img_2.jpg" alt="Фото из галереи">
+               </div>
+               <div class="slider__item">
+                  <img src="img/slider/slider-img_3.jpg" alt="Фото из галереи">
+               </div>
+               <div class="slider__item">
+                  <img src="img/slider/slider-img_4.jpg" alt="Фото из галереи">
+               </div>
+               <div class="slider__item">
+                  <img src="img/slider/slider-img_5.jpg" alt="Фото из галереи">
+               </div>
             </div>
          </div>
       </section>
@@ -134,46 +153,64 @@
             </form>
          </div>
       </section>
+      <section class="partners">
+         <div class="container">
+            <h2>Наши партнеры</h2>
+            <ul class="partners__list">
+               <li class="partners__item"><img src="img/partners/partner_1.png" alt="Логотип партнера"></li>
+               <li class="partners__item"><img src="img/partners/partner_2.png" alt="Логотип партнера"></li>
+               <li class="partners__item"><img src="img/partners/partner_3.png" alt="Логотип партнера"></li>
+               <li class="partners__item"><img src="img/partners/partner_4.png" alt="Логотип партнера"></li>
+               <li class="partners__item"><img src="img/partners/partner_5.png" alt="Логотип партнера"></li>
+               <li class="partners__item"><img src="img/partners/partner_6.png" alt="Логотип партнера"></li>
+               <li class="partners__item"><img src="img/partners/partner_7.png" alt="Логотип партнера"></li>
+            </ul>
+         </div>
+      </section>
    </main>
    <footer class="main-footer">
       <div class="container">
-         <nav class="main-footer__navigation">
-            <ul class="navigation__list">
-               <li class="navigation__link">Главная</li>
-               <li class="navigation__link">Каталог</li>
-               <li class="navigation__link">Пиво</li>
-               <li class="navigation__link">Бар</li>
-               <li class="navigation__link">Доставка</li>
-               <li class="navigation__link">Экскурсия</li>
-            </ul>
-         </nav>
-         <a href="" class="main-footer__logo"><img src="" alt=""></a>
-         <div class="main-footer-feedback">
-            <div class="feedback__social">
-               <b>Мы в соцсетях</b>
-               <ul>
-                  <li>
-                     <a href="#" class="social-button"><span class="visually-hidden">Facebook</span><img src="img/fb.png"
-                           alt="Иконка Facebook"></a>
-                  </li>
-                  <li>
-                     <a href="#" class="social-button"><span class="visually-hidden">Instagram</span><img src="img/insta.png"
-                           alt="Иконка Instagram"></a>
-                  </li>
-                  <li>
-                     <a href="#" class="social-button"><span class="visually-hidden">Youtube</span><img src="img/youtube.png"
-                           alt="Иконка Youtube"></a>
-                  </li>
+         <div class="main-footer-wrapper">
+            <nav class="main-footer-navigation">
+               <ul class="navigation__list">
+                  <li class="navigation__link"><a href="#">Главная</a></li>
+                  <li class="navigation__link"><a href="#">Каталог</a></li>
+                  <li class="navigation__link"><a href="#">Пиво</a></li>
+                  <li class="navigation__link"><a href="#">Бар</a></li>
+                  <li class="navigation__link"><a href="#">Доставка</a></li>
+                  <li class="navigation__link"><a href="#">Экскурсия</a></li>
                </ul>
-            </div>
-            <div class="feedback__email">
-               <p>
-                  По вопросам и предложениям пишите нам на почту
-               </p>
-               <img src="img/email-icon.png" alt="Иконка письма">
+            </nav>
+            <a href="" class="main-footer__logo"><img src="img/footer-logo.svg" alt="Логотип ГЛАВПИВМАГ"></a>
+            <div class="main-footer-feedback">
+               <div class="feedback__social">
+                  <b>Мы в соцсетях</b>
+                  <ul>
+                     <li>
+                        <a href="#" class="social__button social__button_fb"><span class="visually-hidden">Facebook</span></a>
+                     </li>
+                     <li>
+                        <a href="#" class="social__button social__button_insta"><span class="visually-hidden">Instagram</span></a>
+                     </li>
+                     <li>
+                        <a href="#" class="social__button social__button_youtube"><span class="visually-hidden">Youtube</span></a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="feedback__email">
+                  <p>
+                     По вопросам и предложениям пишите нам на почту
+                  </p>
+                  <a href="mailto:info@glavpivmag.ru"><img src="img/email-icon.png" alt="Иконка письма"></a>
+               </div>
             </div>
          </div>
+         
       </div>
    </footer>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/slick.min.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
