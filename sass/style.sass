@@ -5,7 +5,7 @@ body
    font-size: 14px
    font-weight: 400
    line-height: 16px
-   color: #000
+   color: #fff
 
 img
    max-width: 100%
@@ -13,7 +13,11 @@ img
 
 a
    text-decoration: none
-   color: #000
+   color: #fff
+
+h1, h2, h3
+   font-weight: 500
+   line-height: 1.2
 
 ul
    list-style: none
@@ -26,9 +30,43 @@ button
    border: none
 
 .container
-   width: 1170px
+   max-width: 1170px
    margin: 0 auto
    padding: 0 15px
+
+button
+   margin: 0
+   padding: 0
+   width: auto
+   outline: none
+   border: none
+
+.button
+   border: 1px solid rgba(0, 0, 0, 0.5)
+   border-radius: 100px
+   background-color: #F3B917
+   color: #000
+   &:hover
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2)
+   &:active
+      background: rgba(243, 185, 23, 0.7)
+      box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.2)
+
+.link-arrow
+   position: relative
+   padding-right: 50px
+   &::after
+      content: ''
+      position: absolute
+      top: 11px
+      right: 0
+      width: 45px
+      height: 16px
+      background: url(../img/Arrow_black.svg) 0 0 no-repeat
+   &:hover::after
+      background: url(../img/Arrow_yellow.svg) 0 0 no-repeat
+   &:active
+      color: #FCC01A
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -43,3 +81,7 @@ input[type="radio"].visually-hidden
    clip-path: inset(100%)
    clip: rect(0 0 0 0)
    overflow: hidden
+
+@import 'header'
+@import 'main'
+@import 'footer'
