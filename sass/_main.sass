@@ -1,3 +1,5 @@
+// === Main offer ===
+
 .main-offer
    padding-top: 300px
    padding-bottom: 45px
@@ -13,6 +15,7 @@
       font-weight: 500
       line-height: 90px
       text-transform: uppercase
+
    &__button
       display: inline-block
       margin-bottom: 245px
@@ -20,11 +23,17 @@
       font-size: 30px
       font-weight: 400
       line-height: 30px
+
    span
       display: block
       color: rgba(255, 255, 255, 0.6)
       font-size: 24px
       line-height: 28px
+
+// === / Main offer ===
+
+
+// === Catalog ===
 
 .catalog
    padding-top: 120px
@@ -34,19 +43,20 @@
       justify-content: space-between
       align-items: center
       margin-bottom: 36px
+
    &__title
       margin: 0
       padding: 0
       color: #000
       font-size: 30px
       text-transform: uppercase
+
    &__link
       color: #000
       font-size: 24px
       font-weight: 400
       line-height: 28px
       
-
    &-list
       display: flex
       justify-content: space-between
@@ -59,8 +69,10 @@
          padding: 7px 42px 25px 33px
          width: 570px
          background-color: #252525
+
       &__image
          height: 392px
+
       .item-about
          padding-top: 33px
          width: 258px
@@ -70,6 +82,7 @@
             padding: 0
             font-size: 24px
             line-height: 26px
+
          &__specs
             display: flex
             flex-wrap: wrap
@@ -81,17 +94,20 @@
                display: block
                margin-bottom: 4px
                color: rgba(255, 255, 255, 0.6)
+
             li
                margin-bottom: 18px
             li:nth-child(odd)
                margin-right: 75px
                width: 75px
+
             b
                display: block
                font-size: 14px
                font-weight: 300
                line-height: 20px
                text-transform: uppercase
+
          p
             margin: 0
             margin-bottom: 48px
@@ -100,12 +116,15 @@
             font-size: 14px
             font-weight: 400
             line-height: 16px
+
       &-quantity
          button
             color: #fff
             font-size: 18px
             font-weight: 500
             line-height: 20px
+            cursor: pointer
+
          .quantity__button
             width: 23px
             height: 23px
@@ -116,6 +135,7 @@
             &:active
                background: rgba(252, 192, 26, 0.5)
                box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2)
+
          &__button
             margin-left: 26px
             padding: 8px 20px
@@ -130,6 +150,7 @@
             &:active
                background: rgba(243, 185, 23, 0.7)
                box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2)
+
          .quantity__index
             box-sizing: border-box
             display: inline-block
@@ -141,17 +162,27 @@
             width: 23px
             height: 23px
             text-align: center
+            color: #fff
+            background-color: transparent
+            border: none
             &:hover
                background: rgba(196, 196, 196, 0.2)
             &:active
                background: rgba(252, 192, 26, 0.5)
                box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2)
 
+
+// === / Catalog ===
+
+
+// === About craft ===
+
 .about-craft
    padding-top: 120px
    padding-bottom: 53px
    background: #252525 url(../img/about-craft-bg.jpg) 100% 0 no-repeat
    background-size: contain
+
    &__title
       margin: 0
       margin-bottom: 36px
@@ -160,6 +191,7 @@
       font-weight: 500
       line-height: 36px
       text-transform: uppercase
+
    &__text
       margin: 0
       margin-bottom: 30px
@@ -167,6 +199,11 @@
       width: 290px
       font-size: 18px
       line-height: 27px
+
+// === / About craft ===
+
+
+// === Gallery ===
 
 .gallery
    padding-top: 120px
@@ -176,18 +213,20 @@
       justify-content: space-between
       align-items: center
       margin-bottom: 36px
+
    &__title
       margin: 0
       padding: 0
       color: #000
       font-size: 30px
       text-transform: uppercase
+
    &__link
-      
       color: #000
       font-size: 24px
       font-weight: 400
       line-height: 28px
+
    .slider
       padding-left: 25px
       padding-right: 25px
@@ -207,7 +246,9 @@
                background: rgba(189, 189, 189, 0.5) url(../img/slider-arrow-left.png) 50% 50% no-repeat
                &:hover
                   background-color: rgba(189, 189, 189, 0.7)
-                
+               &:active
+                  background-color: rgba(252, 192, 26, 0.4)
+
             &_right
                top: 50% 
                margin-top: -35px
@@ -215,7 +256,14 @@
                background: rgba(189, 189, 189, 0.5) url(../img/slider-arrow-right.png) 50% 50% no-repeat
                &:hover
                   background-color: rgba(189, 189, 189, 0.7)
+               &:active
+                  background-color: rgba(252, 192, 26, 0.4)
             
+// === / Gallery ===
+
+
+// === Subscribe ===
+
 .subscribe
    padding-top: 60px
    padding-bottom: 90px
@@ -228,18 +276,81 @@
       font-weight: 500
       line-height: 36px
       text-transform: uppercase
-   &-form input[type="text"]
-      box-sizing: border-box
-      margin-right: 70px
-      padding: 15px 30px 15px 30px
-      width: 325px
-      font-size: 24px
-      font-weight: 300
-      line-height: 24px
-   &__button
-      padding: 15px 43px
-      font-size: 24px
-      line-height: 24px
+
+   &-form
+      position: relative
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      &__field
+         position: relative
+         margin: 0
+         padding: 0
+         label
+            position: absolute
+            top: 15px
+            left: 30px
+            color: #BDBDBD
+            font-size: 24px
+            font-weight: 300
+            line-height: 24px
+      
+         input[type="text"], input[type="email"]
+            box-sizing: border-box
+            margin-right: 70px
+            margin-bottom: 10px
+            padding: 15px 30px 15px 30px
+            width: 325px
+            border: 1px solid rgba(0, 0, 0, 0.5)
+            border-radius: 2px
+            outline: none
+            font-size: 24px
+            font-weight: 300
+            line-height: 24px
+            &:focus
+               border: 1px solid #F3B917
+               & + label
+                  opacity: 0
+            &:valid
+               border: 1px solid #97FAAD
+               & + label
+                  opacity: 0
+            &:invalid:not(:placeholder-shown)
+               & + label
+                  opacity: 0
+            &:invalid
+               box-shadow: none
+            
+      .username-requirements
+         position: absolute
+         top: 62px
+         margin: 0
+         padding: 0
+         color: #EB441F
+         font-weight: 300
+         font-size: 14px
+         line-height: 20px
+         li
+
+      .valid
+         overflow: hidden
+         max-height: 0
+         transition: max-height 1s ease-out
+
+      .invalid
+         max-height: 300px
+         transition: max-height 1s ease-in
+
+      &__button
+         padding: 15px 43px
+         font-size: 24px
+         line-height: 24px
+
+// === / Subscribe ===
+      
+
+// === Partners ===
+
 .partners
    padding-top: 130px
    padding-bottom: 120px
@@ -252,9 +363,12 @@
       font-weight: 500
       line-height: 36px
       text-transform: uppercase
+
    &__list
       display: flex
       justify-content: space-between
       align-items: center
       margin: 0
       padding: 0
+
+// === / Partners ===
