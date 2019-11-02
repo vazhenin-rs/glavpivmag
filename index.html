@@ -14,22 +14,38 @@
 <body>
    <header class="main-header">
       <div class="container">
-         <nav class="main-navigation">
-            <a href="#" class="main-navigation__logo"><img src="img/Logo.svg" alt="Логотип ГЛАВПИВМАГ" width="109" height="110"></a>
-            <ul class="main-navigation__site">
-               <li class="main-navigation__link main-navigation__link_current"><a href="">Главная</a></li>
-               <li class="main-navigation__link"><a href="">Каталог</a></li>
-               <li class="main-navigation__link"><a href="">Пиво</a></li>
-               <li class="main-navigation__link"><a href="">Бар</a></li>
-               <li class="main-navigation__link"><a href="">Доставка</a></li>
-               <li class="main-navigation__link"><a href="">Экскурсия</a></li>
+         <div class="main-header-wrapper">
+            <a href="#" class="main-header__logo"><img src="img/Logo.svg" alt="Логотип ГЛАВПИВМАГ" width="109"
+                  height="110"></a>
+            <nav class="main-navigation">
+               <ul class="main-navigation__site">
+                  <li class="main-navigation__link main-navigation__link_current"><a href="">Главная</a></li>
+                  <li class="main-navigation__link"><a href="">Каталог</a></li>
+                  <li class="main-navigation__link"><a href="">Пиво</a></li>
+                  <li class="main-navigation__link"><a href="">Бар</a></li>
+                  <li class="main-navigation__link"><a href="">Доставка</a></li>
+                  <li class="main-navigation__link"><a href="">Экскурсия</a></li>
+               </ul>
+               <div class="main-navigation__mobile-icon">
+                  <div class="mobile-icon"></div>
+               </div>
+               <div class="main-navigation__mobile-wrapper">
+                  <ul class="main-navigation__mobile-nav">
+                     <li class="main-navigation__mobile-link main-navigation__mobile-link_current"><a href="">Главная</a></li>
+                     <li class="main-navigation__mobile-link"><a href="">Каталог</a></li>
+                     <li class="main-navigation__mobile-link"><a href="">Пиво</a></li>
+                     <li class="main-navigation__mobile-link"><a href="">Бар</a></li>
+                     <li class="main-navigation__mobile-link"><a href="">Доставка</a></li>
+                     <li class="main-navigation__mobile-link"><a href="">Экскурсия</a></li>
+                  </ul>
+               </div>
+            </nav>
+            <ul class="main-header__contacts">
+               <li class="contacts__phone"><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+               <li class="contacts__address">Москва, Якиманка, д.2</li>
+               <li class="contacts__cart"><a href="#" class="link-cart">Корзина</a></li>
             </ul>
-         </nav>
-         <ul class="main-header__contacts">
-            <li class="contacts__phone"><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
-            <li class="contacts__address">Москва, Якиманка, д.2</li>
-            <li class="contacts__cart"><a href="#" class="link-cart">Корзина</a></li>
-         </ul>
+         </div>
       </div>
    </header>
    <main>
@@ -104,17 +120,20 @@
       </section>
       <section class="about-craft">
          <div class="container">
-            <h2 class="about-craft__title">О крафте</h2>
-            <p class="about-craft__text">
-               Craft beer – алкогольный напиток частного производства,
-               который выпускается мелкосерийными партиями,
-               где основной удар делается на вкус, аромат и текстуру пива.
-            </p>
-            <p class="about-craft__text">
-               Крафтовые пивовары самые настоящие экспериментаторы,
-               которые стоят на страже современных технологий,
-               классических рецептов и пивных трендов
-            </p>
+            <div class="about-craft-inner">
+               <h2 class="about-craft__title">О крафте</h2>
+               <p class="about-craft__text">
+                  Craft beer – алкогольный напиток частного производства,
+                  который выпускается мелкосерийными партиями,
+                  где основной удар делается на вкус, аромат и текстуру пива.
+               </p>
+               <p class="about-craft__text">
+                  Крафтовые пивовары самые настоящие экспериментаторы,
+                  которые стоят на страже современных технологий,
+                  классических рецептов и пивных трендов
+               </p>
+            </div>
+            
          </div>
       </section>
       <section class="gallery">
@@ -144,22 +163,20 @@
       </section>
       <section class="subscribe">
          <div class="container">
-            <h2>Стань частью нашего сообщества</h2>
-            <form action="https://echo.htmlacademy.ru" class="subscribe-form" method="POST">
-               <p class="subscribe-form__field">
-                  <input class="form-input" type="text" id="username" name="username" minlength="2" required placeholder=" ">
-                  <label for="username">Имя</label>
-                  <ul class="username-requirements">
-                     <li class="valid">* Необходимо указать Ваше имя</li>
-                     <li class="valid">Имя должно содержать только буквы кириллицы</li>
-                  </ul>
-               </p>
-               <p class="subscribe-form__field">
-                  <input class="form-input" type="email" id="user-email" name="user-email" required placeholder=" ">
-                  <label for="user-email">Почта</label>
-               </p>
-               <button type="submit" id="submit-button" class="button subscribe-form__button">Зарегистрироваться</button>
-            </form>
+            <div class="subscribe-inner">
+               <h2>Стань частью нашего сообщества</h2>
+               <form action="https://echo.htmlacademy.ru" class="subscribe-form" method="POST">
+                  <p class="subscribe-form__field">
+                     <input class="form-input" type="text" id="username" name="username" minlength="2" required placeholder=" ">
+                     <label for="username">Имя</label>
+                  </p>
+                  <p class="subscribe-form__field">
+                     <input class="form-input" type="email" id="user-email" name="user-email" required placeholder=" ">
+                     <label for="user-email">Почта</label>
+                  </p>
+                  <button type="submit" id="submit-button" class="button subscribe-form__button">Зарегистрироваться</button>
+               </form>
+            </div>
          </div>
       </section>
       <section class="partners">
@@ -260,7 +277,6 @@
                </div>
             </div>
          </div>
-         
       </div>
    </footer>
    <div class="overlay">

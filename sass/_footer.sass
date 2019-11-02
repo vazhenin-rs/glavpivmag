@@ -37,7 +37,7 @@
    &__logo
       filter: grayscale(100%)
    &-feedback
-
+      font-size: 18px
       .feedback__social
          width: 190px
          margin-left: auto
@@ -45,7 +45,6 @@
          b
             display: block
             margin-bottom: 20px
-            font-size: 18px
             line-height: 20px
             text-align: center
             text-transform: uppercase
@@ -83,7 +82,7 @@
             margin-right: 8px
             padding: 0
             width: 260px
-            font-size: 18px
+            
             line-height: 25px
             &::after
                content: ''
@@ -97,3 +96,38 @@
             &:hover, &:focus
                path
                   fill: #F3B917
+@media (max-width: $screen-md-max)
+   .main-footer
+      &-wrapper
+         align-items: center
+      &-navigation
+
+         .navigation__list
+            padding-top: 20px
+            padding-bottom: 20px
+            padding-left: 40px
+            width: 260px
+            font-size: 16px
+            line-height: 20px
+      &-feedback
+         font-size: 16px
+         margin-left: 20px
+@media (max-width: $screen-sm-max)
+   .main-footer
+
+      &-wrapper
+         flex-direction: column
+      &__logo
+         order: 2
+         
+      &-navigation
+         display: none
+      &-feedback
+         display: flex
+         flex-direction: column
+         align-items: center
+         margin-left: 0
+         margin-bottom: 50px
+         .feedback__social
+            margin-left: 0
+         .feedback__email
