@@ -1,3 +1,4 @@
+/* === Скрипт для Slick Slider === */
 $(document).ready(function () {
    $('.slider').slick({
       arrows: true,
@@ -9,57 +10,10 @@ $(document).ready(function () {
       slidesToScroll: 1
    });
 });
+/* === / Скрипт для Slick Slider === */
 
 
-/* let quantityPlusBtn  = document.getElementById('quantity__button_plus'),
-    quantityMinusBtn = document.getElementById('quantity__button_minus'),
-    quantityCount    = document.getElementById('quantity__index');
-
-quantityPlusBtn.onclick = function () {
-   let quantity = parseInt(quantityCount.value);
-   if (quantity < 10) {
-      quantity = quantity + 1;
-      quantityCount.value = quantity;
-   }
-}
-
-quantityMinusBtn.onclick = function () {
-   let quantity = parseInt(quantityCount.value);
-   if (quantity > 1) {
-      quantity = quantity - 1;
-      quantityCount.value = quantity;
-   }
-} */
-
-
-/* function bindEvent(callback, eventType, targets) {
-   targets.forEach(function (target) {
-      target.addEventListener(eventType, callback);
-   });
-};
-
-
-let buttonPlus = document.querySelectorAll('.quantity__button_plus');
-let buttonMinus = document.querySelectorAll('.quantity__button_minus');
-let quantityCount = document.querySelectorAll('.quantity__index');
-
-bindEvent(function () {
-   let quantity = parseInt(quantityCount.value);
-   if (quantity < 10) {
-      quantity = quantity + 1;
-      quantityCount.value = quantity;
-   }
-}, 'click', buttonPlus);
-
-bindEvent(function () {
-   let quantity = parseInt(quantityCount.value);
-   if (quantity > 1) {
-      quantity = quantity - 1;
-      quantityCount.value = quantity;
-   }
-}, 'click', buttonMinus); */
-
-// Количество товара
+/* === Количество товара === */
 
 let buttonPlus    = document.querySelectorAll('.quantity__button_plus'),
     buttonMinus   = document.querySelectorAll('.quantity__button_minus'),
@@ -86,9 +40,9 @@ for (var b = 0; b < buttonMinus.length; b++) {
       }
    });
 }
+/* === / Количество товара === */
 
-
-// Модальное окно
+/* === Модальное окно === */
 
 let popupButton      = document.querySelector(".button-write-us"),
     popupCloseButton = document.querySelector(".modal__close"),
@@ -120,3 +74,18 @@ popupCloseButton.addEventListener("click", function (evt) {
    }, 1000);
    
 });
+
+/* === / Модальное окно === */
+
+/* === Кнопка мобильной навигации === */
+
+let mobileIcon       = document.querySelector('.main-navigation__mobile-icon'),
+    mobileIconLines  = document.querySelector('.mobile-icon'),
+    mobileNavigation = document.querySelector('.main-navigation__mobile-wrapper');
+
+mobileIcon.addEventListener("click", function(){
+   mobileIconLines.classList.toggle('mobile-icon-active');
+   mobileNavigation.classList.toggle('main-navigation__mobile-wrapper--active');
+});
+
+/* === / Кнопка мобильной навигации === */
