@@ -7,7 +7,22 @@ $(document).ready(function () {
       swipe: false,
       infinite: true,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [
+         {
+            breakpoint: 768,
+            settings: {
+               swipe: true,
+               slidesToShow: 2
+            }
+         },
+         {
+            breakpoint: 576,
+            settings: {
+               slidesToShow: 1
+            }
+         }
+      ]
    });
 });
 /* === / Скрипт для Slick Slider === */
