@@ -46,6 +46,26 @@
          padding: 15px 40px
          font-size: 25px
          line-height: 25px
+@media (max-width: $screen-sm)
+   .main-offer
+      h1
+         margin-bottom: 200px
+         width: 100%
+         text-align: center
+         font-size: 35px
+      &__button
+         box-sizing: border-box
+         display: block
+         margin: 0 auto
+         margin-bottom: 45px
+         padding: 18px 40px
+         width: 300px
+         font-size: 25px
+         font-weight: 400
+         line-height: 30px
+      span
+         text-align: center
+         font-size: 18px
 // === / Main offer ===
 
 
@@ -64,14 +84,10 @@
       margin: 0
       padding: 0
       color: #000
-      font-size: 30px
       text-transform: uppercase
 
    &__link
-      color: #000
-      font-size: 24px
-      font-weight: 400
-      line-height: 28px
+
       
    &-list
       display: flex
@@ -218,7 +234,31 @@
          flex-direction: column
          align-items: center
          &__item
+            margin-right: 0
             margin-bottom: 20px
+
+@media (max-width: $screen-sm)
+   .catalog
+      &-inner
+         flex-direction: column
+         align-items: flex-start
+
+      &-list
+         
+         &__item
+            flex-direction: column
+            align-items: center
+            padding-right: 0
+            width: 100%
+         &__image
+            height: 250px
+         .item-about
+            text-align: center
+            &__specs
+               width: 100%
+               justify-content: space-around
+            p
+               width: 100%
 // === / Catalog ===
 
 
@@ -279,46 +319,63 @@
       margin: 0
       padding: 0
       color: #000
-      font-size: 30px
       text-transform: uppercase
 
    &__link
-      color: #000
-      font-size: 24px
-      font-weight: 400
-      line-height: 28px
+      
 
    .slider
       padding-left: 25px
       padding-right: 25px
+      .slick-list
+         position: relative
+      &__item
+         margin: 0 5px
       &-arrow
-            position: absolute
-            top: 0
-            display: block
-            width: 70px
-            height: 70px
-            border: 1px solid #000
-            border-radius: 50%
-            z-index: 10
-            &_left
-               top: 50%
-               margin-top: -35px
-               left: 0
-               background: rgba(189, 189, 189, 0.5) url(../img/slider-arrow-left.png) 50% 50% no-repeat
-               &:hover
-                  background-color: rgba(189, 189, 189, 0.7)
-               &:active
-                  background-color: rgba(252, 192, 26, 0.4)
+         position: absolute
+         top: 0
+         display: block
+         width: 70px
+         height: 70px
+         border: 1px solid #000
+         border-radius: 50%
+         z-index: 10
+         &_left
+            top: 50%
+            margin-top: -35px
+            left: 0
+            background: rgba(189, 189, 189, 0.5) url(../img/slider-arrow-left.png) 50% 50% no-repeat
+            &:hover
+               background-color: rgba(189, 189, 189, 0.7)
+            &:active
+               background-color: rgba(252, 192, 26, 0.4)
 
-            &_right
-               top: 50% 
-               margin-top: -35px
-               right: 9px
-               background: rgba(189, 189, 189, 0.5) url(../img/slider-arrow-right.png) 50% 50% no-repeat
-               &:hover
-                  background-color: rgba(189, 189, 189, 0.7)
-               &:active
-                  background-color: rgba(252, 192, 26, 0.4)
+         &_right
+            top: 50% 
+            margin-top: -35px
+            right: 0
+            background: rgba(189, 189, 189, 0.5) url(../img/slider-arrow-right.png) 50% 50% no-repeat
+            &:hover
+               background-color: rgba(189, 189, 189, 0.7)
+            &:active
+               background-color: rgba(252, 192, 26, 0.4)
+@media (max-width: $screen-md)
+      .slider
+         &__item
+            img
+               margin: 0 auto
+@media (max-width: $screen-sm)
+   .gallery
+      &-inner
+         flex-direction: column
+         align-items: flex-start
+   .slider
+         .slider-arrow
+            width: 50px
+            height: 50px
+
+      
+
             
 // === / Gallery ===
 
@@ -429,9 +486,6 @@
       margin-bottom: 40px
       padding: 0
       color: #000
-      font-size: 30px
-      font-weight: 500
-      line-height: 36px
       text-transform: uppercase
 
    &__list
