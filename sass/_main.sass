@@ -269,6 +269,7 @@
    
    .container
       padding-left: 0
+      padding-right: 0
    &-inner
       padding: 120px 30px 53px 15px
       width: 290px
@@ -292,13 +293,14 @@
       font-size: 18px
       line-height: 27px
 
-@media (max-width: $screen-sm-max)
+@media (max-width: $screen-md)
    .about-craft
       &-inner
-         background-color: rgba(#252525,0.8)
+         background-color: rgba(#252525,0.7)
 @media (max-width: $screen-sm)
    .about-craft
       &-inner
+         box-sizing: border-box
          width: 100%
 
 // === / About craft ===
