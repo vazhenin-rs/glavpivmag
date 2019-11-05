@@ -92,16 +92,12 @@
          transform: rotate(45deg)
       &::after
          transform: rotate(-45deg)
+
 @media (max-width: $screen-lg)
-   .modal
-      &-wrap
-         
-      &-write
-         width: 70%
-@media (max-width: $screen-sm)
    .modal
       &-write
          width: 100%
+         height: 100vh
          h2
             font-size: 20px
             text-align: center
@@ -110,13 +106,13 @@
             align-items: center
             input[type="text"]
                font-size: 18px
-
+               padding: 12px 24px
             textarea
                box-sizing: border-box
                resize: none
-               padding: 15px 30px
+               padding: 12px 24px
                width: 100%
-               height: 200px
+               height: 20vh
                font-size: 18px
                font-weight: 300
                line-height: 24px
